@@ -234,7 +234,7 @@ class SurveySystemMain {
         // Simulate storing feedback in database
         try {
             // Establish database connection (replace with your database connection logic)
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/surveydb", "root", "Pass@7045");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/surveydb", "root", "");
 
             // Insert feedback into database
             PreparedStatement statement = conn.prepareStatement("INSERT INTO feedback (name, rating, feedback) VALUES (?, ?, ?)");
